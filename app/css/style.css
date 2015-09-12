@@ -1,0 +1,89 @@
+body{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 14px;
+}
+section{ clear: both; width:100%;overflow: none; margin-bottom:8px; border-top: 1px black solid;}
+article{ margin-left:4%; width:96%;}
+p{margin:0;}
+input{margin-left:10px; width:140px;}
+header{ padding: 4px 4px; margin-bottom: 12px; color:white;}
+.overflowY{overflow-y:scroll;}
+.left{float: left;}
+.right{float: right;}
+
+.orange{ background-color: #FAAAAF;}
+.blue{ background-color: #AAAACC;}
+.purple{}
+
+.col{
+	-webkit-flex-direction: column; 
+ 	flex-direction: column;
+ 	-webkit-align-content: stretch;
+   align-content: stretch;
+}
+.col>*{flex: 1 0 0; margin: 1px 1px; padding: 0 4px;}
+
+.row{
+	-webkit-flex-direction: row; 
+ 	flex-direction: row;
+ 	-webkit-align-content: stretch;
+   	align-content: stretch;
+}
+.row>*{flex: 1 0 0; margin: 1px 1px; padding: 0 4px;}
+
+.row_unbalanced{
+	-webkit-flex-direction: row; 
+ 	flex-direction: row;
+ 	flex-justify: flex-start;
+ }
+.row_unbalanced>*{margin: 1px 1px; padding: 0 4px;}
+
+.flex{
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.one_h{height:100px;}
+.two_h{height:200px;}
+.three_h{height:300px;}
+
+#alertBox{
+	height:120px;
+}
+
+#diaryBox{
+	height:536px;
+}
+.diaryEntry{
+	display:inline;
+	border-radius: 4px;
+}
+
+
+#searchBox{
+	height:20px;
+}
+
+.fileEntry{
+	margin-right: 8px;
+	border-right: 1px solid grey;
+}
+
+.document{
+	height:40px;
+	width:40px;
+	background-image: url("../bin/document.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-bottom: 4px;
+	float:left;
+}
+.documentLabel{
+	width: 64px;
+	float:right;
+}
